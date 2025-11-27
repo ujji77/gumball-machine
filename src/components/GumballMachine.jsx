@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '../lib/utils';
-import Globe from './Globe';
+import PhysicsGlobe from './PhysicsGlobe';
 import CoinSlot from './CoinSlot';
 import CollectionTray from './CollectionTray';
 import PromptReveal from './PromptReveal';
@@ -58,7 +58,7 @@ export default function GumballMachine() {
 
             <div className="relative w-full max-w-md aspect-[3/4] bg-red-500 rounded-t-full rounded-b-3xl shadow-2xl overflow-hidden border-4 border-red-600 z-0">
                 {/* Globe Area */}
-                <Globe isDispensing={isDispensing} />
+                <PhysicsGlobe isDispensing={isDispensing} />
 
                 {/* Machine Body */}
                 <div className="absolute bottom-0 left-0 w-full h-[40%] bg-red-500 flex flex-col items-center justify-center">
